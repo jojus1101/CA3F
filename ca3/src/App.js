@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./App.css";
 import facade from "./apiFacade";
 import Planets from "./Components/planets";
 import People from "./Components/people";

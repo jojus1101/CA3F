@@ -21,7 +21,7 @@ const Planets = () => {
     <div>
       <span>number of planets :{JSON.stringify(planets.count)}</span>
       <br/>
-      <span>name of planets :{JSON.stringify(planets.name)}</span>
+      <span>name of planet :{JSON.stringify(planets.name)}</span>
       <hr />
       <span>Has error: {JSON.stringify(hasError)}</span>
     </div>

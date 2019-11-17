@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {listpeople} from "../settings";
+import JSONPretty from 'react-json-pretty';
 
 const People = () => {
   const [hasError, setErrors] = useState(false);
@@ -19,9 +20,12 @@ const People = () => {
 
   return (
     <div>
-      <span>{JSON.stringify(people.name)}</span>
+      <p>Fetched User</p>
+       <span>Name
+         <JSONPretty id="json-pretty" data={people.name}></JSONPretty>
+         </span>
       <br/>
-      <span>{JSON.stringify(people.height)}</span>
+      <span>Address of user<JSONPretty id="json-pretty" data={people.address}></JSONPretty>}</span>
       <hr />
       <span>Has error: {JSON.stringify(hasError)}</span>
     </div>

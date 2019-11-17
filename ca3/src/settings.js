@@ -1,2 +1,3 @@
-export const listpeople = "https://swapi.co/api/people/1/"
+export const listpeople = "https://jsonplaceholder.typicode.com/users/1/"
 export const listplanets = "https://swapi.co/api/planets/1/"
+export const UserList = "/users/1/";
